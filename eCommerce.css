@@ -1,0 +1,162 @@
+.topnav{
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+.topnav-right {
+    float: right;
+}
+
+#button1{
+    background-color: rgb(75, 50, 150);
+    color: white;
+    border-radius: 30px;
+    font-size: medium;
+    margin-right: 80px;
+    font-family: monospace;
+    width: 150px;
+
+}
+
+#logo{
+    margin-left: 140px;
+    margin-top: 30px;
+    width: 65px;
+    height: 18px;
+}
+
+#nav1 a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: start;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 2px solid transparent;
+    
+  }
+
+#nav1 p:hover {
+    border-bottom: 2px solid black;
+    text-align: start;
+    
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-1.avif");
+
+  /* Set a specific height */
+  width: 100%;
+  height: 600px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+#dropdown a:hover{
+    text-decoration: underline;
+   
+}
+
+#navdesign{
+    width: 280px;
+    height: 250px;
+}
+
+#heroimage {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-2.avif");
+  
+    /* Set a specific height */
+    margin-top: 80px;
+    width: 100%;
+    height: 700px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+#heroimage  hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+#learnmorebtn{
+    margin-top: 20px;
+    background-color: rgb(77, 44, 87);
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+#heroimage2 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-3.avif");
+  
+    /* Set a specific height */
+    margin-top: 80px;
+    width: 100%;
+    height: 700px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+#heroimage2  hero-text {
+    text-align: start;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+#emname{
+    padding-top: 40px;
+    margin-right: 230px;
+
+}
+
+#email{
+    margin-left: 200px;
+    width: 400px;
+    height: 50px;
+}

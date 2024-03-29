@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (min-width:1024px) and (max-width:1600px) {
+            #nav1 {
+                padding-left: 100px;
+                
+            }
+
+            #righticon{
+                padding-top: 25px;
+                padding-left: 700px;
+            }
+
+            #nocard{
+               padding-left: 10px;
+               padding-top: 30px;
+               padding-right: 25px;
+               
+
+            }
+
+            #nav2 {
+                
+                padding-top: 20px;
+            }
+
+            #button1 {
+                background-color: rgb(75, 50, 150);
+                color: white;
+                border-radius: 30px;
+                font-size: medium;
+                font-family: monospace;
+                width: 150px;
+                
+            }
+
+            
+
+            #logo {
+                width: 65px;
+                height: 18px;
+            }
+
+            #logo1 {
+                text-align: center;
+
+            }
+
+            #border {
+                border-bottom: 1px solid lightgrey;
+                height: 80px;
+            }
+
+            #cart0{
+                margin-left: 1280px;
+                margin-top: -80px;
+            }
+
+            
+
+            #nav4 li {
+                margin-top: 10px;
+                width: 120px;
+                height: 50px;
+                width: auto;
+                padding-left: 20px;
+               
+                
+                
+            }
+
+            #nav4 a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: start;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                border-bottom: 2px solid transparent;
+
+            }
+
+            #nav4 p:hover {
+                border-bottom: 2px solid black;
+                text-align: start;
+
+            }
+
+            .navbar-nav{
+                margin-left: 600px;
+            }
+
+            #nav3{
+                margin-top: 8px;
+               margin-left: 100px;
+               
+                
+            }
+
+            #cart{
+                width: 1px;
+                margin-right: 30px;
+                margin-top: 25px;
+               
+            }
+
+            #nocardline{
+                margin-top: -40px;
+                margin-left: 300px;
+                
+            }
+
+            #startbtn{
+                margin-top: -25px;
+                margin-left: 1250px;
+            }
+            
+
+            #dropdown a:hover {
+                text-decoration: underline;
+
+            }
+
+            #row1 {
+                background-color: rgb(76, 31, 89);
+                color: white;
+                text-align: center;
+                height: 60px;
+                padding-top: 20px;
+                padding: 20px;
+                font-size: large;
+                margin-top: 160px;
+                
+
+            }
+
+            /* The hero image */
+            .hero-image {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-1.avif");
+
+                /* Set a specific height */
+                width: 100%;
+                height: 600px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            .hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #row3 {
+                text-align: center;
+                padding: 30px;
+            }
+
+            #row4 {
+                margin-left: 100px;
+
+            }
+
+            #img4 {
+                width: auto;
+                height: 400px;
+
+
+            }
+
+            #card {
+                width: 300px;
+                height: 100px;
+            }
+
+            .card-title {
+                font-size: x-large;
+            }
+
+            .card-body {
+                text-align: center;
+                font-size: large;
+            }
+
+            .card-body s {
+                color: rgb(187, 175, 175);
+            }
+
+            #heroimage1 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-2.avif");
+
+                /* Set a specific height */
+                margin-top: 80px;
+                width: 100%;
+                height: 700px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #hibtn {
+                color: rgb(86, 31, 86);
+                width: 150px;
+                height: 50px;
+            }
+
+            #card2 {
+                width: 600px;
+            }
+
+            #row6 {
+                padding-top: 100px;
+                padding-left: 150px;
+
+
+            }
+
+            #cardbody {
+                text-align: start;
+                padding-top: 40px;
+                line-height: 50px;
+
+
+            }
+
+            #learnmorebtn {
+                margin-top: 20px;
+                background-color: rgb(77, 44, 87);
+                color: white;
+                width: 200px;
+                height: 50px;
+            }
+
+            #carbody p {
+                color: rgb(77, 44, 87);
+
+            }
+
+            #heroimage2 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-3.avif");
+
+                /* Set a specific height */
+                margin-top: 80px;
+                width: 100%;
+                height: 700px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage2 hero-text {
+                text-align: start;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #emname {
+                padding-top: 40px;
+                margin-right: 230px;
+
+            }
+
+            #email {
+                margin-left: 200px;
+                width: 400px;
+                height: 50px;
+            }
+
+            #r7btn{
+                color: rgb(86, 31, 86);width: 150px;height: 50px;margin-top: 20px;
+            }
+
+            #r9img{
+                width: 400px;
+                height: 350px;
+                padding-left: 30px;
+            }
+
+            #footer{
+                height: 100%;
+                background-color: #f6f6f6;
+                margin-top: 100px;
+            }
+
+            #footer1{
+                padding-left: 140px;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            #footer2{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                text-decoration: underline;
+            }
+
+            #tlogo{
+                color: black;
+            }
+
+            #flogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #ilogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #herotext{
+                font-size:80px;
+            }
+            
+
+           
+
+        }
+
+        @media(min-width:650px) and (max-width:768px){
+            #nav1 {
+                padding-left: 50px;
+                
+            }
+
+            #righticon{
+                padding-top: 25px;
+                padding-left: 80px;
+            }
+
+            #nocard{
+               padding-left: 10px;
+               padding-top: 30px;
+               padding-right: 25px;
+            }
+
+            #nav2 {
+                
+                padding-top: 25px;
+            }
+
+            #button1 {
+                background-color: rgb(75, 50, 150);
+                color: white;
+                border-radius: 30px;
+                font-size: medium;
+                font-family: monospace;
+                width: 150px;
+                
+            }
+            #cart0{
+                position: fixed;
+                margin-left: 650px;
+                margin-top: -10px;
+            }
+
+            #logo {
+                width: 65px;
+                height: 18px;
+                margin-left: 25px;
+                margin-top: -5px;
+            }
+
+            #border {
+                border-bottom: 1px solid lightgrey;
+                height: 80px;
+            }
+            #cart{
+                padding-top: 25px;
+            }
+
+            #nocardline{
+                margin-top: -30px;
+                margin-left: 300px;
+                
+            }
+
+            #startbtn{
+                margin-top: -30px;
+                margin-left: 590px;
+            }
+
+            .navbar-toggler-icon{
+                margin-left: -1450px;
+            }
+
+            .navbar-toggler{
+                margin-left: auto;
+               
+            }
+
+            #collapsibleNavbar{
+                padding-left: 650px;
+                text-align: left;
+                
+            }
+            #nav4 li {
+                margin-top: 10px;
+                width: 120px;
+                height: 50px;
+                width: auto;
+                padding-left: 20px;
+                
+                
+            }
+
+            #nav4 a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: start;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                border-bottom: 2px solid transparent;
+
+            }
+
+            #nav4 p:hover {
+                border-bottom: 2px solid black;
+                text-align: start;
+
+            }
+
+            #nav3{
+                margin-top: 8px;
+               margin-left:50px;
+                
+            }
+
+            #row1{
+                background-color: rgb(76, 31, 89);
+                color: white;
+                text-align: center;
+                height: 60px;
+                padding-top: 20px;
+                font-size: large;
+                margin-top: 160px;
+            }
+
+             /* The hero image */
+             .hero-image {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-1.avif");
+
+                /* Set a specific height */
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            .hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #row3 {
+                text-align: center;
+                padding: 30px;
+            }
+
+            .card-title {
+                font-size: x-large;
+            }
+
+            .card-body {
+                text-align: center;
+                font-size: large;
+            }
+
+            .card-body s {
+                color: rgb(187, 175, 175);
+            }
+
+            #heroimage1 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-2.avif");
+
+                /* Set a specific height */
+                margin-top: 20px;
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #row6 {
+                padding-top: 50px;
+                padding-left: 150px;
+            }
+
+            #card2 {
+                width: 380px;
+            }
+
+            #cardbody {
+                text-align: start;
+                padding-top: 40px;
+                line-height: 20px;
+
+
+            }
+
+            #learnmorebtn {
+                margin-top: 2px;
+                background-color: rgb(77, 44, 87);
+                color: white;
+                width: 200px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+
+            #carbody p {
+                color: rgb(77, 44, 87);
+
+            }
+
+            #heroimage2 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-3.avif");
+
+                /* Set a specific height */
+                margin-top: 80px;
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage2 hero-text {
+                text-align: start;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #emname {
+                padding-top: 40px;
+                margin-right: 230px;
+
+            }
+
+            #email {
+                margin-left: 40px;
+                width: 350px;
+                height: 50px;
+            }
+
+            #r7btn{
+                color: rgb(86, 31, 86);
+                width: 150px;
+                height: 50px;
+                margin-top: 20px;
+            }
+
+            #r9img{
+                width: 120px;
+                height: 100px;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            #footer{
+                height: 100%;
+                background-color: #f6f6f6;
+                margin-top: 100px;
+            }
+
+            #footer1{
+                
+                padding-top: 100px;
+                padding-left: 200px;
+                
+            }
+
+            #footer2{
+                padding-top: 50px;
+                padding-bottom: 100px;
+                text-decoration: underline;
+                padding-left: 200px;
+            }
+
+            #tlogo{
+                color: black;
+            }
+
+            #flogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #ilogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #herotext{
+                font-size:30px;
+            }
+
+
+
+        }
+
+        @media (min-width:320px)and (max-width:475px){
+            #nav{
+                padding-left: 10px;
+            }
+
+            #nav2 {
+                height: 100%;
+                margin-top: 30px;
+            }
+
+            #button1 {
+                background-color: rgb(75, 50, 150);
+                color: white;
+                font-size: x-small;
+                padding-top: 1   0px;
+                
+            }
+
+            #righticon{
+                margin-left: 120px;
+                margin-top: 80px;
+            }
+
+            
+
+            #button1{
+                margin-left: 300px;
+                margin-top: -165px;
+               
+            }
+
+            #nocardline{
+                margin-top: 25px;
+                padding-top: 8px;
+                padding-left: 22px;
+                padding-bottom: 8px;
+                background-color: lightgrey;
+                
+            }
+
+            #startbtn{
+                margin-top: -10px;
+            }
+
+           
+
+            #nocard{
+
+                background-color: lightgrey;
+                margin-left: -2px;
+                margin-top: 150px;
+            }
+
+            #collapsibleNavbar{
+                padding-left: -150px;
+                width: 100px;
+                
+               
+                
+            }
+
+            #nav3{
+                
+                margin-left: 110px;
+            }
+
+            #logo {
+               
+                width: 55px;
+                height: 18px;  
+                margin-top: -20px;
+                   
+            }
+
+            
+
+            #cart0{
+                
+                width: 140px;
+                margin-left: 300px;
+                margin-top: -1px;
+                position: fixed;
+            }
+
+            .navbar-toggler{
+                margin-right: 230px;
+                margin-top: -65px;
+                margin-left: 20px;
+            }
+
+            #dropdown {
+                float:right;
+                
+            }
+
+            
+
+            #nav4 li {
+                margin-top: 10px;
+                width: 120px;
+                height: 50px;
+                width: auto;
+                padding-left: 20px;
+                
+                
+            }
+
+            #nav4 a {
+                float: right;
+                display: block;
+                color: black;
+                text-align: start;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                border-bottom: 2px solid transparent;
+
+            }
+
+            #nav4 p:hover {
+                border-bottom: 2px solid black;
+                text-align: end;
+
+            }
+
+                
+
+            #row1{
+                background-color: rgb(76, 31, 89);
+                color: white;
+                text-align: center;
+                height: 60px;
+                padding: 20px;
+                /* padding-top: 20px; */
+                font-size: large;
+                margin-top: 200px;
+                margin-right: 80px;
+            }
+
+             /* The hero image */
+             .hero-image {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-1.avif");
+
+                /* Set a specific height */
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            .hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #row3 {
+                text-align: center;
+                padding: 30px;
+            }
+
+            #row4 {
+                text-align: start;
+
+            }
+
+            #card {
+                width: 380px;
+                height: 500px;
+            }
+
+            .card-title {
+                font-size: x-large;
+            }
+
+            .card-body {
+                text-align: center;
+                font-size: large;
+            }
+
+            .card-body s {
+                color: rgb(187, 175, 175);
+            }
+
+            #heroimage1 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-2.avif");
+
+                /* Set a specific height */
+                margin-top: 20px;
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #row6 {
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+
+            #card2 {
+                width: 380px;
+            }
+
+            #cardbody {
+                text-align: start;
+                padding-top: 40px;
+                line-height: 20px;
+
+
+            }
+
+            #learnmorebtn {
+                margin-top: 2px;
+                background-color: rgb(77, 44, 87);
+                color: white;
+                width: 200px;
+                height: 50px;
+            }
+
+            #carbody p {
+                color: rgb(77, 44, 87);
+
+            }
+
+            
+            #heroimage2 {
+                /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/Background-3.avif");
+
+                /* Set a specific height */
+                margin-top: 80px;
+                width: 100%;
+                height: 400px;
+
+                /* Position and center the image to scale nicely on all screens */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            /* Place text in the middle of the image */
+            #heroimage2 hero-text {
+                text-align: start;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #emname {
+                padding-top: 40px;
+                margin-right: 230px;
+
+            }
+
+            #email {
+                margin-left: 40px;
+                width: 350px;
+                height: 50px;
+            }
+
+            #r7btn{
+                color: rgb(86, 31, 86);
+                width: 150px;
+                height: 50px;
+                margin-top: 20px;
+            }
+
+            #r9img{
+                width: 100px;
+                height: 100px;
+                margin-top: 10px;
+            }
+
+            #footer{
+                height: 100%;
+                background-color: #f6f6f6;
+                margin-top: 100px;
+            }
+
+            #footer1{
+                
+                padding-top: 100px;
+                padding-left: 60px;
+                
+            }
+
+            #footer2{
+                padding-top: 50px;
+                padding-bottom: 100px;
+                text-decoration: underline;
+                padding-left: 60px;
+            }
+
+            #tlogo{
+                color: black;
+            }
+
+            #flogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #ilogo{
+                padding-left: 20px;
+                color: black;
+            }
+
+            #herotext{
+                font-size:30px;
+            }
+
+            #hicon{
+            display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row "  style="height: 100%;">
+            <header>
+                <div class="col-lg-12 col-sm-12 fixed-top" style="background-color: white;">
+                    <div class="row " id="border">
+                        <div class="col-lg-12" id="nav2">
+                            <div class="btn-group" id="nav1">
+                                <a type="button" class="btn" href="#"><i class="fa-solid fa-arrow-left" style="font-size: large;"></i></a>
+                                <a type="button" class="btn" href="#">All templates</a>
+                                <a type="button" class="btn" href="#"><i class="fa-solid fa-tv" id="hicon"></i></a>
+                                <a type="button" class="btn" href="#"><i class="fa-solid fa-mobile" id="hicon"></i></a>
+                            </div>
+                            <div id="nocardline"> 
+                                <a id="righticon" ><i class="fa-solid fa-circle-check" ></i></a>
+                                <a id="nocard" >No credit card required</a>
+                               
+                            </div>
+                            <div id="startbtn">
+                                <a type="button" href="#" class="btn btn-lg" id="button1">START BUILDING </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="row" id="nav4">
+                        <nav class="navbar navbar-expand-lg ">
+                            <a class="navbar-brand" href="#" id="nav3">
+                                <img src="assets/logo.png" id="logo">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav" >
+                                    <li class="nav-item dropdown" id="dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">All Product</a></li>
+                                            <li><a class="dropdown-item" href="#">New Collection</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="nav-item" >
+                                        <a class="nav-link" href="#">
+                                            <p>Sustainability</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" >
+                                        <a class="nav-link" href="#">
+                                            <p>About</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <p>Contact</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </nav>
+                        <div id="cart0">
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" title="Go to cart" ><i class="fa-solid fa-bag-shopping" 
+                                id="cart" ></i>Cart(0)
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    
+                     
+                      
+                    
+                </div>
+            </header>
+        </div>
+
+        <!-- Row 1 -->
+
+        <div class="row">
+            <div class="col-lg-12 col-sm-12" id="row1">
+                <a>Free shipping on orders over $50 amount</a>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="row">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 id="herotext">Handmade ceramics</h1>
+                    <p>Painted clay ceramics made with love.</p><br><br>
+                    <a class="btn btn-light" id="hibtn" href="#">Shop now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+
+        <div class="row" id="row3">
+            <h1>Our bestsellers</h1>
+        </div>
+
+        <!-- Row 4 -->
+
+        <div class="row" id="row4">
+
+            <div class="col-lg-2 col-md-6 col-12" id="img4">
+                <div class="card border-light" id="card">
+                    <img class="card-img-top" src="assets/img1.avif" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">'Candy' Flowerpot</h5>
+                        <p class="card-text"><s>$59.90</s>&nbsp $49.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6" id="img4">
+                <div class="card border-light" id="card">
+                    <img class="card-img-top" src="assets/img2.avif" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">'Drop' vase</h5>
+                        <p class="card-text"><s>$49.90</s>&nbsp $40.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6" id="img4">
+                <div class="card border-light" id="card">
+                    <img class="card-img-top" src="assets/img3.avif" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">'Wave' vase</h5>
+                        <p class="card-text" style="color: rgb(187, 175, 175);">SOLD OUT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6" id="img4">
+                <div class="card border-light" id="card">
+                    <img class="card-img-top" src="assets/img4.avif" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">'Sun' Vase</h5>
+                        <p class="card-text">$69.90</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Row 5 -->
+        <div class="row">
+            <div class="hero-image" id="heroimage1">
+                <div class="hero-text">
+                    <h1 sid="herotext">Home decor items</h1>
+                    <p>Painted clay ceramics made with love.</p><br><br>
+                    <a class="btn btn-light" id="hibtn" href="#">Shop
+                        now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="row" id="row6">
+            <div class="col-lg-6 col-md-12" style="width: auto;">
+                <div class="card border-light" id="card2">
+                    <img class="card-img-top" src="assets/img5.avif" alt="Card image">
+                    <div class="card-body" id="cardbody">
+                        <h1 class="card-title">About Mina</h1>
+                        <p class="card-text">Mina is a brand born out of a passion for ceramics.</p>
+                        <a type="button" href="#" class="btn btn-success btn-lg " id="learnmorebtn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-light" id="card2">
+                    <img class="card-img-top" src="assets/img6.avif" alt="Card image">
+                    <div class="card-body" id="cardbody">
+                        <h1 class="card-title">Sustainability</h1>
+                        <p class="card-text">Mina is an eco-friendly brand that cares about sustainability.</p>
+                        <a type="button" href="#" class="btn btn-success btn-lg " id="learnmorebtn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 7 -->
+
+        <div class="row">
+            <div class="hero-image" id="heroimage2">
+                <div class="hero-text">
+                    <h1 id="herotext">Sign-up for our newsletter</h1>
+                    <h5><label for="email" class="form-label" id="emname">Your email</label></h5>
+                    <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+                    <a href="#">
+                        <button class="btn btn-light" id="r7btn">Submit</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center;padding-top: 50px;padding-bottom: 30px;">
+                    <h1 >Follow us on Instagram</h1>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Row 9 -->
+        <div class="row">
+            <div class="col-lg-1 col-md-3 col-1"></div>
+            <div class="col-lg-3 col-md-2 col-3" >
+                <img src="assets/img7.avif" id="r9img" >
+            </div>
+            <div class="col-lg-3 col-md-2 col-3" >
+                <img src="assets/img8.avif" id="r9img">
+            </div>
+            <div class="col-lg-3 col-md-2 col-3">
+                <img src="assets/img9.avif" id="r9img">
+            </div>
+            <div class="col-lg-2 col-md-3 col-2"></div>
+        </div>
+
+        <!-- Row 10 -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12" style="text-align: center;padding-top: 30px;">
+                <a href="#"><button class="btn"  id="learnmorebtn">@mina_studio</button></a>
+
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer" id="footer" >
+            <div class="row" >
+                <div class="col-lg-4 col-md-6 col-6" id="footer1" >
+                    <h2>MINA</h2>
+                    <h3 >
+                        <a href="#"><i class="fa-brands fa-twitter" id="tlogo" ></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook" id="flogo"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram" id="ilogo"></i></a>
+                    </h3>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-6"></div>
+                <div class="col-lg-4 col-md-12 col-12" id="footer2" >
+                    
+                    <h5>Contact</h5>
+                    <h5>Returns</h5>
+                    <h5>Payments & Delivery</h5>
+                </div>
+                
+            </div>
+
+        </div>
+    
+
+
+    </div>
+</body>
+
+</html>
